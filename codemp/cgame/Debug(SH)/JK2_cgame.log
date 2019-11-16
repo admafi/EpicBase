@@ -1,0 +1,80 @@
+﻿  AnimalNPC.c
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_weapons.h(39): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\teams.h(13): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(587): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(612): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(850): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(989): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(1960): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(3040): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(3049): warning C4091: 'typedef ': ignored on left of '_flag_status' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(3095): warning C4091: 'typedef ': ignored on left of 'Eorientations' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(3106): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_vehicles.h(414): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(198): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(218): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(226): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(393): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(683): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(703): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(1016): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(1117): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(1481): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+  q_math.c
+c1 : fatal error C1083: Cannot open source file: '..\game\q_math.c': No such file or directory
+  q_shared.c
+g:\vm\sharedfolder\jediacademy-master\codemp\game\teams.h(13): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(587): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(612): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(850): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(989): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(1960): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(3040): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(3049): warning C4091: 'typedef ': ignored on left of '_flag_status' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(3095): warning C4091: 'typedef ': ignored on left of 'Eorientations' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(3106): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.c(306): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: see declaration of 'vsprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.c(318): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: see declaration of 'vsprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.c(838): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(346): note: see declaration of 'strncpy'
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.c(991): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: see declaration of 'vsprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.c(1027): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1465): note: see declaration of 'vsprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.c(1187): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.c(1242): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.c(1317): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.c(1318): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.c(1365): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+  cg_effects.c
+g:\vm\sharedfolder\jediacademy-master\codemp\game\teams.h(13): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(587): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(612): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(850): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(989): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(1960): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(3040): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(3049): warning C4091: 'typedef ': ignored on left of '_flag_status' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(3095): warning C4091: 'typedef ': ignored on left of 'Eorientations' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\q_shared.h(3106): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\cgame\tr_types.h(282): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_weapons.h(39): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_vehicles.h(414): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(198): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(218): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(226): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(393): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(683): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(703): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(1016): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(1117): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(1481): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\cgame\cg_local.h(1060): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+  Generating Code...

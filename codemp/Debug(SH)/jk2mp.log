@@ -1,0 +1,332 @@
+﻿  win_shared.cpp
+g:\vm\sharedfolder\jediacademy-master\codemp\win32\win_shared.cpp(303): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\vm\sharedfolder\jediacademy-master\codemp\win32\win_shared.cpp(307): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\vm\sharedfolder\jediacademy-master\codemp\win32\win_shared.cpp(520): error C2668: 'abs': ambiguous call to overloaded function
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(359): note: could be '__int64 abs(const __int64) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(354): note: or       'long abs(const long) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\math.h(454): note: or       'int abs(int)'
+  g:\vm\sharedfolder\jediacademy-master\codemp\win32\win_shared.cpp(520): note: while trying to match the argument list '(unsigned long)'
+g:\vm\sharedfolder\jediacademy-master\codemp\win32\win_shared.cpp(521): error C2668: 'abs': ambiguous call to overloaded function
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(359): note: could be '__int64 abs(const __int64) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(354): note: or       'long abs(const long) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\math.h(454): note: or       'int abs(int)'
+  g:\vm\sharedfolder\jediacademy-master\codemp\win32\win_shared.cpp(521): note: while trying to match the argument list '(unsigned long)'
+g:\vm\sharedfolder\jediacademy-master\codemp\win32\win_shared.cpp(522): error C2668: 'abs': ambiguous call to overloaded function
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(359): note: could be '__int64 abs(const __int64) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(354): note: or       'long abs(const long) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\math.h(454): note: or       'int abs(int)'
+  g:\vm\sharedfolder\jediacademy-master\codemp\win32\win_shared.cpp(522): note: while trying to match the argument list '(unsigned long)'
+  win_glimp.cpp
+g:\vm\sharedfolder\jediacademy-master\codemp\cgame\tr_types.h(282): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\win32\win_glimp.cpp(938): error C2440: '=': cannot convert from 'const char *' to 'char *'
+  g:\vm\sharedfolder\jediacademy-master\codemp\win32\win_glimp.cpp(938): note: Conversion loses qualifiers
+g:\vm\sharedfolder\jediacademy-master\codemp\win32\win_glimp.cpp(1364): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strnicmp. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(579): note: see declaration of 'strnicmp'
+g:\vm\sharedfolder\jediacademy-master\codemp\win32\win_glimp.cpp(1365): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strnicmp. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(579): note: see declaration of 'strnicmp'
+g:\vm\sharedfolder\jediacademy-master\codemp\win32\win_glimp.cpp(1498): warning C4996: 'GetVersionExA': was declared deprecated
+  c:\program files (x86)\windows kits\8.1\include\um\sysinfoapi.h(433): note: see declaration of 'GetVersionExA'
+g:\vm\sharedfolder\jediacademy-master\codemp\win32\win_glimp.cpp(1539): warning C4996: 'strlwr': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strlwr. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(574): note: see declaration of 'strlwr'
+g:\vm\sharedfolder\jediacademy-master\codemp\win32\win_glimp.cpp(1649): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(2254): note: see declaration of 'sscanf'
+g:\vm\sharedfolder\jediacademy-master\codemp\win32\win_glimp.cpp(1652): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(2254): note: see declaration of 'sscanf'
+g:\vm\sharedfolder\jediacademy-master\codemp\win32\win_glimp.cpp(1682): warning C4996: 'strlwr': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strlwr. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(574): note: see declaration of 'strlwr'
+  tr_image.cpp
+g:\vm\sharedfolder\jediacademy-master\codemp\cgame\tr_types.h(282): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(1220): error C2440: 'initializing': cannot convert from 'const char *' to 'char *'
+  g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(1220): note: Conversion loses qualifiers
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(1451): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(1456): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(1461): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(1466): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(1471): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(1476): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(1485): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(1496): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(1500): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(1619): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(1662): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(1715): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(2279): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(2286): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(2293): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(2985): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(2990): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(2991): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(2992): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(3005): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(3006): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(3018): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(3019): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(3021): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+g:\vm\sharedfolder\jediacademy-master\codemp\renderer\tr_image.cpp(3022): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+  q_math.cpp
+g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\q_math.cpp(4): fatal error C1083: Cannot open include file: '../game/q_math.c': No such file or directory
+  files_pc.cpp
+g:\vm\sharedfolder\jediacademy-master\codemp\cgame\tr_types.h(282): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\ui\ui_public.h(207): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_weapons.h(39): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_vehicles.h(414): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(198): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(218): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(226): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(393): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(683): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(703): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(1016): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(1117): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(1481): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\files_pc.cpp(178): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\files_pc.cpp(197): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\files_pc.cpp(234): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\files_pc.cpp(257): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\files_pc.cpp(295): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\files_pc.cpp(338): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\files_pc.cpp(354): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\files_pc.cpp(374): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\files_pc.cpp(515): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\files_pc.cpp(558): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\files_pc.cpp(609): error C2668: 'abs': ambiguous call to overloaded function
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(359): note: could be '__int64 abs(const __int64) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(354): note: or       'long abs(const long) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\math.h(454): note: or       'int abs(int)'
+  g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\files_pc.cpp(609): note: while trying to match the argument list '(unsigned long)'
+g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\files_pc.cpp(657): error C2440: 'return': cannot convert from 'const char *' to 'char *'
+  g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\files_pc.cpp(657): note: Conversion loses qualifiers
+g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\files_pc.cpp(884): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\files_pc.cpp(1503): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\files_pc.cpp(1550): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\files_pc.cpp(1775): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\files_pc.cpp(1943): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\files_pc.cpp(1944): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\files_pc.cpp(1956): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\files_pc.cpp(1961): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\files_pc.cpp(1963): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\vm\sharedfolder\jediacademy-master\codemp\qcommon\files_pc.cpp(2268): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+  snd_dma.cpp
+g:\vm\sharedfolder\jediacademy-master\codemp\cgame\tr_types.h(282): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\ui\ui_public.h(207): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_weapons.h(39): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_vehicles.h(414): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(198): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(218): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(226): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(393): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(683): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(703): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(1016): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(1117): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(1481): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(853): warning C4996: 'strlwr': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strlwr. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(574): note: see declaration of 'strlwr'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(2935): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(2992): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(3026): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(3180): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(3234): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(3614): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(3639): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(3792): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(568): note: see declaration of 'stricmp'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(3797): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(568): note: see declaration of 'stricmp'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(3803): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(568): note: see declaration of 'stricmp'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(3808): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(568): note: see declaration of 'stricmp'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(3813): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(568): note: see declaration of 'stricmp'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(3864): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(568): note: see declaration of 'stricmp'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(4572): error C2065: 'i': undeclared identifier
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(4574): error C2065: 'i': undeclared identifier
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(4574): error C2228: left of '.bActive' must have class/struct/union
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(4575): error C2065: 'i': undeclared identifier
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(4575): error C2228: left of '.bTrackSwitchPending' must have class/struct/union
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(4576): error C2065: 'i': undeclared identifier
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(4576): error C2228: left of '.fSmoothedOutVolume' must have class/struct/union
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(4997): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(568): note: see declaration of 'stricmp'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(5085): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(5194): error C2065: 'iChannel': undeclared identifier
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(5507): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(5510): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(5563): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\snd_dma.cpp(5618): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+  cl_keys.cpp
+g:\vm\sharedfolder\jediacademy-master\codemp\cgame\tr_types.h(282): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\ui\ui_public.h(207): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_weapons.h(39): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_vehicles.h(414): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(198): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(218): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(226): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(393): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(683): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(703): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(1016): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(1117): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(1481): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\client\cl_keys.cpp(729): error C2440: '=': cannot convert from 'const char *' to 'char *'
+  g:\vm\sharedfolder\jediacademy-master\codemp\client\cl_keys.cpp(729): note: Conversion loses qualifiers
+g:\vm\sharedfolder\jediacademy-master\codemp\client\cl_keys.cpp(842): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\cl_keys.cpp(1042): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(568): note: see declaration of 'stricmp'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\cl_keys.cpp(1352): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\cl_keys.cpp(1354): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\cl_keys.cpp(1627): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+  cl_input.cpp
+g:\vm\sharedfolder\jediacademy-master\codemp\cgame\tr_types.h(282): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\ui\ui_public.h(207): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_weapons.h(39): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_vehicles.h(414): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(198): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(218): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(226): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(393): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(683): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(703): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(1016): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(1117): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(1481): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\client\cl_input.cpp(1474): error C2668: 'abs': ambiguous call to overloaded function
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(359): note: could be '__int64 abs(const __int64) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(354): note: or       'long abs(const long) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\math.h(454): note: or       'int abs(int)'
+  g:\vm\sharedfolder\jediacademy-master\codemp\client\cl_input.cpp(1474): note: while trying to match the argument list '(vec_t)'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\cl_input.cpp(1477): error C2668: 'abs': ambiguous call to overloaded function
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(359): note: could be '__int64 abs(const __int64) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(354): note: or       'long abs(const long) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\math.h(454): note: or       'int abs(int)'
+  g:\vm\sharedfolder\jediacademy-master\codemp\client\cl_input.cpp(1477): note: while trying to match the argument list '(vec_t)'
+  cl_cin.cpp
+g:\vm\sharedfolder\jediacademy-master\codemp\cgame\tr_types.h(282): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\ui\ui_public.h(207): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_weapons.h(39): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_vehicles.h(414): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(198): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(218): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(226): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(393): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(683): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(703): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(1016): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(1117): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(1481): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\client\cl_cin.cpp(1197): error C2668: 'abs': ambiguous call to overloaded function
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(359): note: could be '__int64 abs(const __int64) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(354): note: or       'long abs(const long) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\math.h(454): note: or       'int abs(int)'
+  g:\vm\sharedfolder\jediacademy-master\codemp\client\cl_cin.cpp(1197): note: while trying to match the argument list '(unsigned int)'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\cl_cin.cpp(1262): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+  0_SH_Leak.cpp
+g:\vm\sharedfolder\jediacademy-master\codemp\cgame\tr_types.h(282): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\ui\ui_public.h(207): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_weapons.h(39): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_vehicles.h(414): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(198): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(218): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(226): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(393): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(683): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(703): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(1016): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(1117): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\game\bg_public.h(1481): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+g:\vm\sharedfolder\jediacademy-master\codemp\smartheap\smrtheap.hpp(99): warning C4595: 'operator delete': non-member operator new or delete functions may not be declared inline
+g:\vm\sharedfolder\jediacademy-master\codemp\smartheap\smrtheap.hpp(164): error C2732: linkage specification contradicts earlier specification for '_set_new_handler'
+  g:\vm\sharedfolder\jediacademy-master\codemp\smartheap\smrtheap.hpp(164): note: see declaration of '_set_new_handler'
+g:\vm\sharedfolder\jediacademy-master\codemp\smartheap\smrtheap.hpp(171): error C2883: 'set_new_handler': function declaration conflicts with 'std::set_new_handler' introduced by using-declaration
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\new.h(31): note: see declaration of 'std::set_new_handler'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\0_sh_leak.cpp(64): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\0_sh_leak.cpp(134): warning C4996: 'strcmpi': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strcmpi. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(562): note: see declaration of 'strcmpi'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\0_sh_leak.cpp(146): warning C4996: 'strcmpi': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strcmpi. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(562): note: see declaration of 'strcmpi'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\0_sh_leak.cpp(160): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\0_sh_leak.cpp(168): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\0_sh_leak.cpp(209): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\0_sh_leak.cpp(231): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\0_sh_leak.cpp(240): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\0_sh_leak.cpp(253): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\0_sh_leak.cpp(261): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\0_sh_leak.cpp(292): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+g:\vm\sharedfolder\jediacademy-master\codemp\client\0_sh_leak.cpp(315): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+  Generating Code...
