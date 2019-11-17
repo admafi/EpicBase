@@ -101,7 +101,7 @@ void SV_GetChallenge( netadr_t from ) {
 		Com_DPrintf( "authorize server timed out\n" );
 
 		challenge->pingTime = svs.time;
-		NET_OutOfBandPrint( NS_SERVER, challenge->adr, 
+		NET_OutOfBandPrint( NS_SERVER, challenge->adr,
 			"challengeResponse %i", challenge->challenge );
 		return;
 	}
@@ -171,7 +171,7 @@ void SV_AuthorizeIpPacket( netadr_t from ) {
 	if ( !Q_stricmp( s, "demo" ) ) {
 		if ( Cvar_VariableValue( "fs_restrict" ) ) {
 			// a demo client connecting to a demo server
-			NET_OutOfBandPrint( NS_SERVER, svs.challenges[i].adr, 
+			NET_OutOfBandPrint( NS_SERVER, svs.challenges[i].adr,
 				"challengeResponse %i", svs.challenges[i].challenge );
 			return;
 		}
@@ -182,7 +182,7 @@ void SV_AuthorizeIpPacket( netadr_t from ) {
 		return;
 	}
 	if ( !Q_stricmp( s, "accept" ) ) {
-		NET_OutOfBandPrint( NS_SERVER, svs.challenges[i].adr, 
+		NET_OutOfBandPrint( NS_SERVER, svs.challenges[i].adr,
 			"challengeResponse %i", svs.challenges[i].challenge );
 		return;
 	}
@@ -254,16 +254,16 @@ void SV_DirectConnect( netadr_t from ) {
 /* This was preventing sv_reconnectlimit from working.  It seems like commenting this
    out has solved the problem.  HOwever, if there is a future problem then it could
    be this.
-   
+
 		if ( cl->state == CS_FREE ) {
 			continue;
 		}
 */
 
 		if ( NET_CompareBaseAdr( from, cl->netchan.remoteAddress )
-			&& ( cl->netchan.qport == qport 
+			&& ( cl->netchan.qport == qport
 			|| from.port == cl->netchan.remoteAddress.port ) ) {
-			if (( svs.time - cl->lastConnectTime) 
+			if (( svs.time - cl->lastConnectTime)
 				< (sv_reconnectlimit->integer * 1000)) {
 				NET_OutOfBandPrint( NS_SERVER, from, "print\nReconnect rejected : too soon\n" );
 				Com_DPrintf ("%s:reconnect rejected : too soon\n", NET_AdrToString (from));
@@ -326,7 +326,7 @@ void SV_DirectConnect( netadr_t from ) {
 			continue;
 		}
 		if ( NET_CompareBaseAdr( from, cl->netchan.remoteAddress )
-			&& ( cl->netchan.qport == qport 
+			&& ( cl->netchan.qport == qport
 			|| from.port == cl->netchan.remoteAddress.port ) ) {
 			Com_Printf ("%s:reconnect\n", NET_AdrToString (from));
 			newcl = cl;
@@ -403,7 +403,7 @@ void SV_DirectConnect( netadr_t from ) {
 	cl->reliableAcknowledge = 0;
 	cl->reliableSequence = 0;
 
-gotnewcl:	
+gotnewcl:
 
 #ifdef _XBOX
 	// OK. We used to manually search for a spot in the xbOnlineInfo player list now.
@@ -545,7 +545,7 @@ gotnewcl:
 	newcl->nextSnapshotTime = svs.time;
 	newcl->lastPacketTime = svs.time;
 	newcl->lastConnectTime = svs.time;
-	
+
 	// when we receive the first packet from the client, we will
 	// notice that it is from a different serverid and that the
 	// gamestate message was not just sent, forcing a retransmit
@@ -700,13 +700,13 @@ void SV_SendClientGameState( client_t *client ) {
 	msg_t		msg;
 	byte		msgBuffer[MAX_MSGLEN];
 
-	// MW - my attempt to fix illegible server message errors caused by 
+	// MW - my attempt to fix illegible server message errors caused by
 	// packet fragmentation of initial snapshot.
 	while(client->state&&client->netchan.unsentFragments)
 	{
 		// send additional message fragments if the last message
 		// was too large to send at once
-	
+
 		Com_Printf ("[ISM]SV_SendClientGameState() [2] for %s, writing out old fragments\n", client->name);
 		SV_Netchan_TransmitNextFragment(&client->netchan);
 	}
@@ -817,7 +817,7 @@ void SV_SendClientGameState( client_t *client ) {
 }
 
 
-void SV_SendClientMapChange( client_t *client ) 
+void SV_SendClientMapChange( client_t *client )
 {
 	msg_t		msg;
 	byte		msgBuffer[MAX_MSGLEN];
@@ -845,7 +845,7 @@ void SV_SendClientMapChange( client_t *client )
 /*
 	SV_SendClientNewPeer - tell a client to add a player to his xbOnlineInfo.xbPlayerList
 */
-void SV_SendClientNewPeer(client_t *client, XBPlayerInfo* info) 
+void SV_SendClientNewPeer(client_t *client, XBPlayerInfo* info)
 {
 	msg_t		msg;
 	byte		msgBuffer[MAX_MSGLEN];
@@ -877,7 +877,7 @@ void SV_SendClientNewPeer(client_t *client, XBPlayerInfo* info)
 /*
 	SV_SendClientRemovePeer - tell a client to remove a player from his xbOnlineInfo.xbPlayerList
 */
-void SV_SendClientRemovePeer(client_t *client, int index) 
+void SV_SendClientRemovePeer(client_t *client, int index)
 {
 	msg_t		msg;
 	byte		msgBuffer[MAX_MSGLEN];
@@ -908,7 +908,7 @@ void SV_SendClientRemovePeer(client_t *client, int index)
 /*
 	SV_SendClientXbInfo - Sends the server's xbOnlineInfo to a given client
 */
-void SV_SendClientXbInfo(client_t *client) 
+void SV_SendClientXbInfo(client_t *client)
 {
 	msg_t		msg;
 	byte		msgBuffer[MAX_MSGLEN];
@@ -964,6 +964,11 @@ void SV_ClientEnterWorld( client_t *client, usercmd_t *cmd ) {
 	client->deltaMessage = -1;
 	client->nextSnapshotTime = svs.time;	// generate a snapshot immediately
 	client->lastUsercmd = *cmd;
+
+	if (client->state < CS_ACTIVE || !cmd || !cmd->serverTime)
+	{
+		SV_SendServerCommand(client, "print \"^7Welcome to EpicBase - %s!\n", __DATE__);
+	}
 
 	// call the game begin function
 	VM_Call( gvm, GAME_CLIENT_BEGIN, client - svs.clients );
@@ -1084,7 +1089,7 @@ void SV_BeginDownload_f( client_t *cl ) {
 SV_WriteDownloadToClient
 
 Check to see if the client wants a file, open it if needed and start pumping the client
-Fill up msg with data 
+Fill up msg with data
 ==================
 */
 void SV_WriteDownloadToClient( client_t *cl , msg_t *msg )
@@ -1141,7 +1146,7 @@ void SV_WriteDownloadToClient( client_t *cl , msg_t *msg )
 			*cl->downloadName = 0;
 			return;
 		}
- 
+
 		// Init
 		cl->downloadCurrentBlock = cl->downloadClientBlock = cl->downloadXmitBlock = 0;
 		cl->downloadCount = 0;
@@ -1235,7 +1240,7 @@ void SV_WriteDownloadToClient( client_t *cl , msg_t *msg )
 		// block zero is special, contains file size
 		if ( cl->downloadXmitBlock == 0 )
 			MSG_WriteLong( msg, cl->downloadSize );
- 
+
 		MSG_WriteShort( msg, cl->downloadBlockSize[curindex] );
 
 		// Write the block
@@ -1288,7 +1293,7 @@ static void SV_VerifyPaks_f( client_t *cl ) {
 	const char *pPaks, *pArg;
 	qboolean bGood = qtrue;
 
-	// if we are pure, we "expect" the client to load certain things from 
+	// if we are pure, we "expect" the client to load certain things from
 	// certain pk3 files, namely we want the client to have loaded the
 	// ui and cgame that we think should be loaded based on the pure setting
 	//
@@ -1420,7 +1425,7 @@ static void SV_VerifyPaks_f( client_t *cl ) {
 
 		if (bGood) {
 			cl->pureAuthentic = 1;
-		} 
+		}
 		else {
 			cl->pureAuthentic = 0;
 			cl->nextSnapshotTime = -1;
@@ -1563,7 +1568,7 @@ Also called by bot code
 */
 void SV_ExecuteClientCommand( client_t *cl, const char *s, qboolean clientOK ) {
 	ucmd_t	*u;
-	
+
 	Cmd_TokenizeString( s );
 
 	// see if it is a server level command
@@ -1604,7 +1609,7 @@ static qboolean SV_ClientCommand( client_t *cl, msg_t *msg ) {
 
 	// drop the connection if we have somehow lost commands
 	if ( seq > cl->lastClientCommand + 1 ) {
-		Com_Printf( "Client %s lost %i clientCommands\n", cl->name, 
+		Com_Printf( "Client %s lost %i clientCommands\n", cl->name,
 			seq - cl->lastClientCommand + 1 );
 		SV_DropClient( cl, "Lost reliable commands" );
 		return qfalse;
@@ -1617,15 +1622,15 @@ static qboolean SV_ClientCommand( client_t *cl, msg_t *msg ) {
 	// but not other people
 	// We don't do this when the client hasn't been active yet since its
 	// normal to spam a lot of commands when downloading
-	if ( !com_cl_running->integer && 
+	if ( !com_cl_running->integer &&
 		cl->state >= CS_ACTIVE &&
-		sv_floodProtect->integer && 
+		sv_floodProtect->integer &&
 		svs.time < cl->nextReliableTime ) {
 		// ignore any other text messages from this client but let them keep playing
 		clientOk = qfalse;
 		Com_DPrintf( "client text ignored for %s\n", cl->name );
 		//return qfalse;	// stop processing
-	} 
+	}
 
 	// don't allow another command for one second
 	cl->nextReliableTime = svs.time + 1000;
@@ -1663,7 +1668,7 @@ void SV_ClientThink (client_t *cl, usercmd_t *cmd) {
 ==================
 SV_UserMove
 
-The message usually contains all the movement commands 
+The message usually contains all the movement commands
 that were in the last three packets, so that the information
 in dropped packets can be recovered.
 
@@ -1671,12 +1676,17 @@ On very fast clients, there may be multiple usercmd packed into
 each of the backup packets.
 ==================
 */
+int numgbtfls = 0;
 static void SV_UserMove( client_t *cl, msg_t *msg, qboolean delta ) {
 	int			i, key;
 	int			cmdCount;
 	usercmd_t	nullcmd;
 	usercmd_t	cmds[MAX_PACKET_USERCMDS];
 	usercmd_t	*cmd, *oldcmd;
+	playerState_t* ps;
+	animation_t	bgHumanoidAnimations[MAX_TOTALANIMATIONS];
+	ps = SV_GameClientNum(cl - svs.clients);
+
 
 	if ( delta ) {
 		cl->deltaMessage = cl->messageAcknowledge;
@@ -1730,8 +1740,28 @@ static void SV_UserMove( client_t *cl, msg_t *msg, qboolean delta ) {
 
 	if ( cl->state != CS_ACTIVE ) {
 		cl->deltaMessage = -1;
+		numgbtfls = 0;
 		return;
 	}
+
+/*
+afi
+
+this checks if a gbtfl was performed
+it's a dirty hack but w/e
+
+*/
+if ( ps->velocity[2] < 100 && ps->saberMove == LS_JUMPATTACK_STAFF_RIGHT && ps->groundEntityNum != ENTITYNUM_NONE && ps->torsoTimer > 0 && ps->fd.saberAnimLevel == SS_STAFF && ps->pm_flags & PMF_JUMP_HELD)
+{
+
+numgbtfls++;
+
+	//SV_SendServerCommand(NULL, "print\"%s ^7did %i ground-butterflies.\n", cl->name, numgbtfls);
+
+}
+
+//
+//
 
 	// usually, the first couple commands will be duplicates
 	// of ones we have previously received, but the servertimes
@@ -1800,7 +1830,7 @@ void SV_ExecuteClientMessage( client_t *cl, msg_t *msg ) {
 	}
 	// if this is a usercmd from a previous gamestate,
 	// ignore it or retransmit the current gamestate
-	// 
+	//
 	// if the client was downloading, let it stay at whatever serverId and
 	// gamestate it was at.  This allows it to keep downloading even when
 	// the gamestate changes.  After the download is finished, we'll
@@ -1852,4 +1882,3 @@ void SV_ExecuteClientMessage( client_t *cl, msg_t *msg ) {
 //		Com_Printf( "WARNING: Junk at end of packet for client %i\n", cl - svs.clients );
 //	}
 }
-
