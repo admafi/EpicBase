@@ -1570,6 +1570,16 @@ void SV_ExecuteClientCommand( client_t *cl, const char *s, qboolean clientOK ) {
 	ucmd_t	*u;
 
 	Cmd_TokenizeString( s );
+	const char *cmd;
+	const char *arg1;
+	const char *arg2;
+	qboolean sayCmd = qfalse;
+
+	Cmd_TokenizeString(s);
+
+	cmd = Cmd_Argv(0);
+	arg1 = Cmd_Argv(1);
+	arg2 = Cmd_Argv(2);
 
 	// see if it is a server level command
 	for (u=ucmds ; u->name ; u++) {

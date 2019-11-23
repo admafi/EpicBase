@@ -18,7 +18,7 @@ Cmd_AddCommand
 */
 void	Cmd_AddCommand( const char *cmd_name, xcommand_t function ) {
 	cmd_function_t	*cmd;
-	
+
 	// fail if the command already exists
 	for ( cmd = cmd_functions ; cmd ; cmd=cmd->next ) {
 		if ( !strcmp( cmd_name, cmd->name ) ) {
@@ -74,7 +74,7 @@ Cmd_CommandCompletion
 */
 void	Cmd_CommandCompletion( void(*callback)(const char *s) ) {
 	cmd_function_t	*cmd;
-	
+
 	for (cmd=cmd_functions ; cmd ; cmd=cmd->next) {
 		callback( cmd->name );
 	}
@@ -88,16 +88,16 @@ Cmd_ExecuteString
 A complete command line has been parsed, so try to execute it
 ============
 */
-void	Cmd_ExecuteString( const char *text ) {	
+void	Cmd_ExecuteString( const char *text ) {
 	cmd_function_t	*cmd, **prev;
 
 	// execute the command line
-	Cmd_TokenizeString( text );		
+	Cmd_TokenizeString( text );
 	if ( !Cmd_Argc() ) {
 		return;		// no tokens
 	}
 
-	// check registered command functions	
+	// check registered command functions
 	for ( prev = &cmd_functions ; *prev ; prev = &cmd->next ) {
 		cmd = *prev;
 		if ( !Q_stricmp( Cmd_Argv(0), cmd->name ) ) {
@@ -117,7 +117,7 @@ void	Cmd_ExecuteString( const char *text ) {
 			return;
 		}
 	}
-	
+
 	// check cvars
 	if ( Cvar_Command() ) {
 		return;
@@ -172,3 +172,19 @@ void Cmd_List_f (void)
 	Com_Printf ("%i commands\n", i);
 }
 
+
+
+
+void Cmd_Args_Sanitize( size_t length, const char *strip, const char *repl )
+{
+	for ( int i = 1; i < cmd_argc; i++ )
+	{
+		char *c = cmd_argv[i];
+
+		if ( length > 0 && strlen( c ) >= length )
+			c[length - 1] = '\0';
+
+		if ( VALIDSTRING( strip ) && VALIDSTRING( repl ) )
+			Q_strstrip( c, strip, repl );
+	}
+}

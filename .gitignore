@@ -6,3 +6,4 @@ codemp/unix/releasei386/ded/sv_init.o
 codemp/unix/releasei386/ded/sv_main.o
 codemp/unix/releasei386/linuxjampded
 codemp/unix/releasei386/linuxjampded
+*.o
