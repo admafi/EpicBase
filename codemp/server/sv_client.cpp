@@ -9,7 +9,6 @@
 #include "../zlib32/zip.h"
 
 static void SV_CloseDownload( client_t *cl );
-
 /*
 =================
 SV_GetChallenge
@@ -1572,7 +1571,7 @@ void SV_ExecuteClientCommand( client_t *cl, const char *s, qboolean clientOK ) {
 	ucmd_t	*u;
 
 	Cmd_TokenizeString( s );
-	
+
 	const char *cmd;
 	const char *arg1;
 	const char *arg2;
@@ -1613,6 +1612,10 @@ void SV_ExecuteClientCommand( client_t *cl, const char *s, qboolean clientOK ) {
 	if (clientOK) {
 		// pass unknown strings to the game
 		if (!u->name && sv.state == SS_GAME && (cl->state == CS_ACTIVE || cl->state == CS_PRIMED)) {
+			Cmd_Args_Sanitize( MAX_CVAR_VALUE_STRING, "\n\r", "  " );
+			if (!sayCmd) {
+					Cmd_Args_Sanitize( MAX_CVAR_VALUE_STRING, ";", " " );
+				}
 			VM_Call( gvm, GAME_CLIENT_COMMAND, cl - svs.clients );
 		}
 	}
@@ -1717,6 +1720,8 @@ static void SV_UserMove( client_t *cl, msg_t *msg, qboolean delta ) {
 	playerState_t* ps;
 	animation_t	bgHumanoidAnimations[MAX_TOTALANIMATIONS];
 	ps = SV_GameClientNum(cl - svs.clients);
+	float currentbtflvelocity = 0;
+	float currentvelocity = sqrt(ps->velocity[0] * ps->velocity[0] + ps->velocity[1] * ps->velocity[1]);
 
 
 	if ( delta ) {
@@ -1775,24 +1780,36 @@ static void SV_UserMove( client_t *cl, msg_t *msg, qboolean delta ) {
 		return;
 	}
 
-/*
-afi
+//NEW STUFF//
 
-this checks if a gbtfl was performed
-it's a dirty hack but w/e
+//display speed
+//SV_SendServerCommand(NULL, "print\"%s ^7has current velocity %f.\n", cl->name, currentvelocity);
 
-*/
-if ( ps->velocity[2] < 100 && ps->saberMove == LS_JUMPATTACK_STAFF_RIGHT && ps->groundEntityNum != ENTITYNUM_NONE && ps->torsoTimer > 0 && ps->fd.saberAnimLevel == SS_STAFF && ps->pm_flags & PMF_JUMP_HELD)
+//check for butterflies
+if (sv_gameplayfixes->integer >= 2 && ps->saberMove == LS_JUMPATTACK_STAFF_RIGHT && ps->fd.saberAnimLevel == SS_STAFF && ps->torsoTimer > 0 && ps->pm_flags & PMF_JUMP_HELD) //&& ps->groundEntityNum != ENTITYNUM_NONE
 {
+	currentbtflvelocity = sqrt(ps->velocity[0] * ps->velocity[0] + ps->velocity[1] * ps->velocity[1]);
+  int   currentbtflvelocityint = static_cast<int>(currentbtflvelocity);
 
-numgbtfls++;
-
-	//SV_SendServerCommand(NULL, "print\"%s ^7did %i ground-butterflies.\n", cl->name, numgbtfls);
-
+	if ( ps->velocity[2] < 100 && ps->groundEntityNum != ENTITYNUM_NONE)
+	{
+		SV_SendServerCommand(NULL, "print\"%s ^1performed a ground-butterfly with a velocity of %i\n", cl->name, currentbtflvelocityint);
+		//numgbtfls++;
+		//SV_SendServerCommand(NULL, "print\"%s ^7did %i ground-butterflies.\n", cl->name, numgbtfls);
+	}
+	else
+	{
+	SV_SendServerCommand(NULL, "print\"%s ^1performed a butterfly with a velocity of %i\n", cl->name, currentbtflvelocityint);
+	}
 }
 
+//check if someone opens the chat/console/menu while doing a btfl to prevent pmove->cmd.forwardmove going to zero
+if (sv_gameplayfixes->integer && cmd->buttons & BUTTON_TALK && ps->saberMove == LS_JUMPATTACK_STAFF_RIGHT)
+{
+	cmd->buttons &= ~ BUTTON_TALK;
+}
 //
-//
+//END of new stuff
 
 	// usually, the first couple commands will be duplicates
 	// of ones we have previously received, but the servertimes

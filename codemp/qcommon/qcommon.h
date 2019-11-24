@@ -382,6 +382,8 @@ void	Cmd_ArgvBuffer( int arg, char *buffer, int bufferLength );
 char	*Cmd_Args (void);
 char	*Cmd_ArgsFrom( int arg );
 void	Cmd_ArgsBuffer( char *buffer, int bufferLength );
+void	Cmd_Args_Sanitize( size_t length = MAX_CVAR_VALUE_STRING, const char *strip = "\n\r;", const char *repl = "   " );
+void Q_strstrip( char *string, const char *strip, const char *repl );
 // The functions that execute commands get their parameters with these
 // functions. Cmd_Argv () will return an empty string, not a NULL
 // if arg > argc, so string operations are allways safe.

@@ -820,6 +820,8 @@ void SV_Init (void) {
 
 	sv_gametype = Cvar_Get ("g_gametype", "0", CVAR_SERVERINFO | CVAR_LATCH );
 	sv_needpass = Cvar_Get ("g_needpass", "0", CVAR_SERVERINFO | CVAR_ROM );
+	sv_gameplayfixes = Cvar_Get ("sv_gameplayfixes", "0", CVAR_ARCHIVE );
+
 	Cvar_Get ("sv_keywords", "", CVAR_SERVERINFO);
 	Cvar_Get ("protocol", va("%i", PROTOCOL_VERSION), CVAR_SERVERINFO | CVAR_ROM);
 	sv_mapname = Cvar_Get ("mapname", "nomap", CVAR_SERVERINFO | CVAR_ROM);
@@ -853,8 +855,6 @@ void SV_Init (void) {
 	sv_timeout = Cvar_Get ("sv_timeout", "200", CVAR_TEMP );
 	sv_zombietime = Cvar_Get ("sv_zombietime", "2", CVAR_TEMP );
 	Cvar_Get ("nextmap", "", CVAR_TEMP );
-
-	sv_gameplayfixes = Cvar_Get ("sv_gameplayfixes", "0", CVAR_SERVERINFO);
 
 #ifndef _XBOX	// No master or downloads on Xbox
 	sv_allowDownload = Cvar_Get ("sv_allowDownload", "0", CVAR_SERVERINFO);

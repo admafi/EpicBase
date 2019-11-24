@@ -67,7 +67,7 @@ Adds command text at the end of the buffer, does NOT add a final \n
 */
 void Cbuf_AddText( const char *text ) {
 	int		l;
-	
+
 	l = strlen (text);
 
 	if (cmd_text.cursize + l >= cmd_text.maxsize)
@@ -178,10 +178,10 @@ void Cbuf_Execute (void)
 		if( i >= (MAX_CMD_LINE - 1)) {
 			i = MAX_CMD_LINE - 1;
 		}
-				
+
 		Com_Memcpy (line, text, i);
 		line[i] = 0;
-		
+
 // delete the text from the command buffer and move remaining commands down
 // this is necessary because commands (exec) can insert data at the
 // beginning of the text buffer
@@ -197,7 +197,7 @@ void Cbuf_Execute (void)
 
 // execute the command line
 
-		Cmd_ExecuteString (line);		
+		Cmd_ExecuteString (line);
 	}
 }
 
@@ -227,14 +227,14 @@ void Cmd_Exec_f( void ) {
 	}
 
 	Q_strncpyz( filename, Cmd_Argv(1), sizeof( filename ) );
-	COM_DefaultExtension( filename, sizeof( filename ), ".cfg" ); 
+	COM_DefaultExtension( filename, sizeof( filename ), ".cfg" );
 	len = FS_ReadFile( filename, (void **)&f);
 	if (!f) {
 		Com_Printf ("couldn't exec %s\n",Cmd_Argv(1));
 		return;
 	}
 	Com_Printf ("execing %s\n",Cmd_Argv(1));
-	
+
 	Cbuf_InsertText (f);
 
 	FS_FreeFile (f);
@@ -271,7 +271,7 @@ Just prints the rest of the line to the console
 void Cmd_Echo_f (void)
 {
 	int		i;
-	
+
 	for (i=1 ; i<Cmd_Argc() ; i++)
 		Com_Printf ("%s ",Cmd_Argv(i));
 	Com_Printf ("\n");
@@ -310,7 +310,7 @@ char	*Cmd_Argv( int arg ) {
 	if ( (unsigned)arg >= cmd_argc ) {
 		return "";
 	}
-	return cmd_argv[arg];	
+	return cmd_argv[arg];
 }
 
 /*
@@ -463,7 +463,7 @@ void Cmd_TokenizeString( const char *text_in ) {
 		cmd_argc++;
 
 		// skip until whitespace, quote, or command
-		while ( *(const unsigned char* /*eurofix*/)text > ' ' ) 
+		while ( *(const unsigned char* /*eurofix*/)text > ' ' )
 		{
 			if ( text[0] == '"' ) {
 				break;
@@ -487,7 +487,7 @@ void Cmd_TokenizeString( const char *text_in ) {
 			return;		// all tokens parsed
 		}
 	}
-	
+
 }
 
 
@@ -506,3 +506,17 @@ void Cmd_Init (void) {
 	Cmd_AddCommand ("wait", Cmd_Wait_f);
 }
 
+
+void Cmd_Args_Sanitize( size_t length, const char *strip, const char *repl )
+{
+	for ( int i = 1; i < cmd_argc; i++ )
+	{
+		char *c = cmd_argv[i];
+
+		if ( length > 0 && strlen( c ) >= length )
+			c[length - 1] = '\0';
+
+		if ( VALIDSTRING( strip ) && VALIDSTRING( repl ) )
+			Q_strstrip( c, strip, repl );
+	}
+}
