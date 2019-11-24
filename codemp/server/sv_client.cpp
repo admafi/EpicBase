@@ -1559,6 +1559,8 @@ static ucmd_t ucmds[] = {
 	{NULL, NULL}
 };
 
+
+
 /*
 ==================
 SV_ExecuteClientCommand
@@ -1570,12 +1572,13 @@ void SV_ExecuteClientCommand( client_t *cl, const char *s, qboolean clientOK ) {
 	ucmd_t	*u;
 
 	Cmd_TokenizeString( s );
+	
 	const char *cmd;
 	const char *arg1;
 	const char *arg2;
 	qboolean sayCmd = qfalse;
 
-	Cmd_TokenizeString(s);
+
 
 	cmd = Cmd_Argv(0);
 	arg1 = Cmd_Argv(1);
@@ -1610,10 +1613,6 @@ void SV_ExecuteClientCommand( client_t *cl, const char *s, qboolean clientOK ) {
 	if (clientOK) {
 		// pass unknown strings to the game
 		if (!u->name && sv.state == SS_GAME && (cl->state == CS_ACTIVE || cl->state == CS_PRIMED)) {
-			Cmd_Args_Sanitize( MAX_CVAR_VALUE_STRING, "\n\r", "  " );
-			if (!sayCmd) {
-					Cmd_Args_Sanitize( MAX_CVAR_VALUE_STRING, ";", " " );
-				}
 			VM_Call( gvm, GAME_CLIENT_COMMAND, cl - svs.clients );
 		}
 	}

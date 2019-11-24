@@ -171,20 +171,3 @@ void Cmd_List_f (void)
 	}
 	Com_Printf ("%i commands\n", i);
 }
-
-
-
-
-void Cmd_Args_Sanitize( size_t length, const char *strip, const char *repl )
-{
-	for ( int i = 1; i < cmd_argc; i++ )
-	{
-		char *c = cmd_argv[i];
-
-		if ( length > 0 && strlen( c ) >= length )
-			c[length - 1] = '\0';
-
-		if ( VALIDSTRING( strip ) && VALIDSTRING( repl ) )
-			Q_strstrip( c, strip, repl );
-	}
-}
